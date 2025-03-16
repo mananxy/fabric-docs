@@ -26,7 +26,7 @@ In this step, you move the raw data table into a Bronze folder to organize the d
 1. Copy/paste the following command to alter table to move table into a Bronze folder.
 
     ```kusto
-    .alter table RawData (BikepointID:string,Street:string,Neighbourhood:string,Latitude:dynamic,Longitude:dynamic,No_Bikes:long,No_Empty_Docks:long,Timestamp:datetime) with (folder="Bronze")
+    .alter table RawData folder="Bronze"
     ```
 
 ## Create target table
